@@ -54,12 +54,12 @@ async function sendMessage() {
     {
       section: "Profile",
       content:
-        "Currently working at Indigenous Services Canada, where Steven designs and maintains accessible, dynamic web-based learning systems and job aid tools.",
+        "Currently working at Indigenous Services Canada, where Zhongrui designs and maintains accessible, dynamic web-based learning systems and job aid tools.",
     },
     {
       section: "Profile",
       content:
-        "Steven has a proven ability to manage projects independently and collaboratively, troubleshoot complex technical issues, and quickly adapt to new tools and frameworks.",
+        "Zhongrui has a proven ability to manage projects independently and collaboratively, troubleshoot complex technical issues, and quickly adapt to new tools and frameworks.",
     },
     {
       section: "Profile",
@@ -76,14 +76,14 @@ async function sendMessage() {
     {
       section: "Education",
       content:
-        "Steven holds a Master of Engineering in Electrical and Computer Engineering from the University of Windsor.",
+        "Zhongrui holds a Master of Engineering in Electrical and Computer Engineering from the University of Windsor.",
     },
 
     // Work Experience - Indigenous Services Canada
     {
       section: "Work Experience",
       content:
-        "Steven currently works as a Programming Officer (PM1) at Indigenous Services Canada, since May 2024.",
+        "Zhongrui currently works as a Programming Officer (PM1) at Indigenous Services Canada, since May 2024.",
     },
     {
       section: "Work Experience",
@@ -98,7 +98,7 @@ async function sendMessage() {
     {
       section: "Work Experience",
       content:
-        "Steven optimizes and enhances images with Adobe Photoshop and Illustrator to meet accessibility and design standards.",
+        "Zhongrui optimizes and enhances images with Adobe Photoshop and Illustrator to meet accessibility and design standards.",
     },
     {
       section: "Work Experience",
@@ -110,7 +110,7 @@ async function sendMessage() {
     {
       section: "Work Experience",
       content:
-        "From Oct 2016 to May 2017, Steven worked as a Web Developer at Beiming Software Corporation in Beijing.",
+        "From Oct 2016 to May 2017, Zhongrui worked as a Web Developer at Beiming Software Corporation in Beijing.",
     },
     {
       section: "Work Experience",
@@ -127,7 +127,7 @@ async function sendMessage() {
     {
       section: "Work Experience",
       content:
-        "From Aug 2020 to Aug 2023, Steven worked as a Warehouse Manager at Canadian Tire in Ottawa, ON.",
+        "From Aug 2020 to Aug 2023, Zhongrui worked as a Warehouse Manager at Canadian Tire in Ottawa, ON.",
     },
     {
       section: "Work Experience",
@@ -144,7 +144,7 @@ async function sendMessage() {
     {
       section: "Skills",
       content:
-        "Steven is proficient in programming languages including C#, PHP, Java, JavaScript, and SQL.",
+        "Zhongrui is proficient in programming languages including C#, PHP, Java, JavaScript, and SQL.",
     },
 
     // Skills - Frameworks & Libraries
@@ -158,7 +158,7 @@ async function sendMessage() {
     {
       section: "Skills",
       content:
-        "Steven is familiar with tools like Git, Visual Studio, Postman, and Azure for development and deployment.",
+        "Zhongrui is familiar with tools like Git, Visual Studio, Postman, and Azure for development and deployment.",
     },
 
     // Skills - Learning Content Development
@@ -172,13 +172,13 @@ async function sendMessage() {
     {
       section: "Skills",
       content:
-        "Steven is skilled in using Adobe Photoshop and Adobe Illustrator for creating and editing multimedia content.",
+        "Zhongrui is skilled in using Adobe Photoshop and Adobe Illustrator for creating and editing multimedia content.",
     },
     // Projects
     {
       section: "Projects",
       content:
-        "Steven created the 'Dynamic Job Aid Framework', allowing dynamic loading of training pages based on URL parameters.",
+        "Zhongrui created the 'Dynamic Job Aid Framework', allowing dynamic loading of training pages based on URL parameters.",
     },
     {
       section: "Projects",
@@ -198,7 +198,7 @@ async function sendMessage() {
     {
       section: "Projects",
       content:
-        "Steven built a Restaurant Review System as a lab project, designing a RESTful API using ASP.NET Core to manage restaurant reviews stored in XML format.",
+        "Zhongrui built a Restaurant Review System as a lab project, designing a RESTful API using ASP.NET Core to manage restaurant reviews stored in XML format.",
     },
     {
       section: "Projects",
