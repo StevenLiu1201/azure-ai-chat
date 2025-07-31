@@ -6,7 +6,7 @@ const chat = document.querySelector(".chat-messages");
 const systemPrompt = {
   role: "system",
   content:
-    "You are a course assistant to help students understand the structure of this training program. You can explain the purpose of each module, what topics are covered, and how different sections connect together.",
+    "You are a personal assistant that answers questions about Zhongrui Liu and his work. Use the provided context to give clear and helpful responses.",
 };
 
 let messages = [systemPrompt];
@@ -50,17 +50,173 @@ async function sendMessage() {
   input.value = "";
 
   const matchedChunks = [
-    "The training team name is DDR Training Team.",
-    "Members include Zhongrui, Nicole B., and John A.",
-    "The course is designed to be completed step by step...",
-    "If you're unsure where to start, begin with the 'Introduction' module...",
-    "The Reference Guide summarizes key content from each module...",
-    "The Reference Guide can be accessed at any time from the course menu.",
+    // Profile
+    {
+      section: "Profile",
+      content:
+        "Currently working at Indigenous Services Canada, where Steven designs and maintains accessible, dynamic web-based learning systems and job aid tools.",
+    },
+    {
+      section: "Profile",
+      content:
+        "Steven has a proven ability to manage projects independently and collaboratively, troubleshoot complex technical issues, and quickly adapt to new tools and frameworks.",
+    },
+    {
+      section: "Profile",
+      content:
+        "He holds a Government of Canada Reliability Clearance and is consistently recognized for professionalism, time management, and teamwork in fast-paced development environments.",
+    },
+
+    // Education
+    {
+      section: "Education",
+      content:
+        "Graduated in April 2025 from Algonquin College with a diploma in Web Development & Internet Applications, with hands-on experience in building secure, full-stack web applications.",
+    },
+    {
+      section: "Education",
+      content:
+        "Steven holds a Master of Engineering in Electrical and Computer Engineering from the University of Windsor.",
+    },
+
+    // Work Experience - Indigenous Services Canada
+    {
+      section: "Work Experience",
+      content:
+        "Steven currently works as a Programming Officer (PM1) at Indigenous Services Canada, since May 2024.",
+    },
+    {
+      section: "Work Experience",
+      content:
+        "At ISC, he designs, develops, and maintains interactive web-based job aids and e-learning courses on the Moodle platform.",
+    },
+    {
+      section: "Work Experience",
+      content:
+        "He creates interactive activities, quizzes, and instructional videos using Articulate Rise 360, Storyline, and H5P.",
+    },
+    {
+      section: "Work Experience",
+      content:
+        "Steven optimizes and enhances images with Adobe Photoshop and Illustrator to meet accessibility and design standards.",
+    },
+    {
+      section: "Work Experience",
+      content:
+        "He developed a Dynamic Job Aid Framework using JavaScript, featuring reusable components and URL-based routing for scalable content delivery.",
+    },
+
+    // Work Experience - Beiming Software Corporation
+    {
+      section: "Work Experience",
+      content:
+        "From Oct 2016 to May 2017, Steven worked as a Web Developer at Beiming Software Corporation in Beijing.",
+    },
+    {
+      section: "Work Experience",
+      content:
+        "He collaborated with a team to develop a website for SDIC Power Holdings Co. Ltd., using Java and MySQL.",
+    },
+    {
+      section: "Work Experience",
+      content:
+        "The site streamlined tasks such as releasing announcements, managing staff files, and providing internal communication channels.",
+    },
+
+    // Work Experience - Canadian Tire
+    {
+      section: "Work Experience",
+      content:
+        "From Aug 2020 to Aug 2023, Steven worked as a Warehouse Manager at Canadian Tire in Ottawa, ON.",
+    },
+    {
+      section: "Work Experience",
+      content:
+        "He handled departmental scheduling to ensure proper staffing across shifts.",
+    },
+    {
+      section: "Work Experience",
+      content:
+        "He initiated a small-scale project aimed at optimizing budget management and team scheduling.",
+    },
+
+    // Skills - Programming Languages
+    {
+      section: "Skills",
+      content:
+        "Steven is proficient in programming languages including C#, PHP, Java, JavaScript, and SQL.",
+    },
+
+    // Skills - Frameworks & Libraries
+    {
+      section: "Skills",
+      content:
+        "He has experience working with frameworks and libraries such as ASP.NET Core, React, and jQuery.",
+    },
+
+    // Skills - Tools
+    {
+      section: "Skills",
+      content:
+        "Steven is familiar with tools like Git, Visual Studio, Postman, and Azure for development and deployment.",
+    },
+
+    // Skills - Learning Content Development
+    {
+      section: "Skills",
+      content:
+        "He uses tools like Moodle, Articulate Rise 360, Storyline, H5P, and Adobe Captivate for developing e-learning content.",
+    },
+
+    // Skills - Design Tools
+    {
+      section: "Skills",
+      content:
+        "Steven is skilled in using Adobe Photoshop and Adobe Illustrator for creating and editing multimedia content.",
+    },
+    // Projects
+    {
+      section: "Projects",
+      content:
+        "Steven created the 'Dynamic Job Aid Framework', allowing dynamic loading of training pages based on URL parameters.",
+    },
+    {
+      section: "Projects",
+      content:
+        "He built a personal finance dashboard app using React, Node.js, and MySQL.",
+    },
+    {
+      section: "Projects",
+      content:
+        "He designed a CMS-based service management website for a massage business using PHP and the Google Sheets API as a backend CMS.",
+    },
+    {
+      section: "Projects",
+      content:
+        "He developed and deployed a custom Azure OpenAI-powered chat assistant to support course Q&A and HR inquiries.",
+    },
+    {
+      section: "Projects",
+      content:
+        "Steven built a Restaurant Review System as a lab project, designing a RESTful API using ASP.NET Core to manage restaurant reviews stored in XML format.",
+    },
+    {
+      section: "Projects",
+      content:
+        "He created a client-side ASP.NET MVC Core application to consume the API, parse XML responses, and display reviews using Razor Views.",
+    },
+    {
+      section: "Projects",
+      content:
+        "The restaurant review API and application were tested and integrated using a local IIS deployment.",
+    },
   ];
 
   messages.splice(1, 0, {
     role: "system",
-    content: "Relevant document data:\n" + matchedChunks.join("\n"),
+    content:
+      "Relevant document data:\n" +
+      matchedChunks.map((chunk) => chunk.content).join("\n"),
   });
 
   try {
